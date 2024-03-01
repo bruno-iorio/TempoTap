@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tempo Tap!</title>
+    <meta charset ='utf-8'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <img id="logo" class="disap" src="logo.png" alt="logo">
+    
+    <div id="startbutton">Start!</div>
+
+    <div id="wrapper" class="disap">
+        <div id="choose">Choose your song!</div>
+        <div id="Song2" class="song">Twinkle Twinkle Little Star<br><br>Easy</div>
+        <div id="Song4" class="song">Doe Deer <br>The Sound of Music <br> Easy</div>
+        <div id="Song6" class="song">Fly me to the moon <br>Frank Sinatra<br>Normal</div>
+        <div id="Song5" class="song">Glimpse of us <br> Joji <br> Normal</div>
+        <div id="Song1" class="song">Baka Mitai<br>Yakuza<br>Difficult</div>
+        <div id="Song3" class="song">Fur Elise<br>Beethoven<br>Very Difficult</div>
+        <div id="tutorialwrapper">
+            <div id="tutorialtitle">Welcome!</div>
+            <div id="tutorial"><br>
+                The goal of the game is to press notes as they come down from the right side of the screen. <br><br>
+                Place your fingers on the F, G, J, K keys, and tap them when the moving notes cross the line next to the keys.<br><br>
+                Longer notes require you to hold the key to gain more points.<br><br>
+                Hitting multiple consecutive notes starts a combo streak, which further increases the amount of points gained!<br><br>
+                Have fun! 
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="game">
+        <div id="l1" class="line">
+            <div id='b1' class="box">F</div>
+        </div>
+        <div id="l2" class="line">
+            <div id='b2' class="box">G</div>
+        </div>
+        <div id="l3" class="line">
+            <div id='b3' class="box">J</div>
+        </div>
+        <div id="l4" class="line">
+            <div id='b4' class="box">K</div>
+        </div>
+    </div>
+    <div class="aftergame">
+        <div id="points"> </div>
+        <div id="combo"></div>
+        <div id="play">Play again</div>
+        <div id="gotomenu"> Menu</div>
+        </div>
+    <div id="quit"> Quit </div>
+    <div id="calibrate">Calibrate speed</div>
+    <div id ='restart'> Restart </div>
+    <div id="calibratingscreen">Tuning the keys...</div>
+    <div id="showpoints"></div>
+    <div id= 'showcombo'></div>
+
+</body>
+</html>

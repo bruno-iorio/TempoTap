@@ -1,0 +1,535 @@
+/* START MENU */
+html {
+    font-family: Verdana, sans-serif;
+}
+
+.disap {
+    display: none;
+}
+
+.menu {
+    background-attachment: fixed;
+    background-image: url(fixedback.png);
+    background-size: cover;
+    background-position:top right;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+   }
+   
+h2 {
+    text-align: center;
+   }
+
+#wrapper {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+   
+.song {
+    display: block;
+    text-align: left;
+    background-color: #f2e9e9;
+    border: 2px solid white;
+    width:30%;
+    height:60px;
+    padding:10px;
+    margin:2px;
+    line-height: 20px;
+    opacity:70%;
+    left: 0px;
+    transition-property: width, padding;
+    transition-duration: 0.5s;
+
+   }
+   
+.song:hover {
+    background-color: pink;
+    box-shadow: 5px 5px 11px 0px rgba(33,33,33,.2); 
+    padding:20px;
+    width: 40%;
+    transition-property: width, padding;
+    transition-duration: 0.5;
+}
+#logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width:40%;
+    height: auto;
+
+} 
+
+#startbutton{
+    display: block;
+    background-color: white;
+    width: 210px;
+    font-size: 55px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    opacity:65%;
+    padding:8px;
+    transition: padding 0.5s;
+    border-radius: 5px;
+}
+
+
+#startbutton:hover{
+    padding: 12px;
+    transition: padding 0.5s;
+
+}
+#choose{
+    display: block;
+    left: 0px;
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    margin: 2px;
+    height:30px;
+    padding: 12px;
+    font-size: 25px;
+    padding-top: 20px;
+    opacity: 0.8; 
+}
+
+#tutorialwrapper {
+    position:absolute;
+    top:70%;
+    right:15%;
+    opacity:0.8;
+}
+
+#tutorialtitle {
+    display:block;
+    line-height: 60px;
+    font-size: 40px;
+    background-color: lightgray;
+    width:500px;
+    padding-right:2%;
+    padding-left: 3%;
+}
+
+#tutorial {
+    background-color: white;
+    height:200px;
+    height: 260px;
+    width:500px;
+    padding-left:3%;
+    padding-right:2%;
+}
+
+/* GAME ELEMENTS */
+
+.tiles {
+    display: inline-block;
+    position: absolute;
+    height:100px;
+    width: 20px;
+    border-radius: 5px ;
+}
+   
+#game {
+    
+    display: none; 
+    width: 105%;
+    margin-top: 10%;
+    border-radius: 10px;
+    
+}
+   
+.line {
+    border: 2px solid black;
+    margin-left: 1px;
+    margin-right:1px;
+    margin-top:1px;
+    height:100px;
+    
+}
+
+
+
+
+.box {
+    display:inline-block;
+    font-size:25px;
+    width:100px;
+    border-right:3px solid black;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 35px;
+    padding-bottom:34px;
+}
+
+
+/* SONG 1: BAKA MITAI */
+
+#Song1:hover {
+    background-color: orange;
+}
+
+body.bakamitai {
+    background-image:url('beach.jpg');
+    background-size:cover;
+}
+
+#game.song1 {
+    box-shadow: 20px 3px 50px white;
+    background-color: pink;
+    border: 5px solid white;
+    opacity: 0.8;
+}
+
+
+.box.pressed.damedane {
+    background-color: orange;
+    box-shadow: 20px 3px 50px rgba(248, 255, 6, 0.5);
+}
+
+.line.damedane {
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.tiles.damedane {
+    background-color: aquamarine;
+}
+
+
+
+
+/* SONG 2: TWINKLE TWINKLE LITTLE STAR */
+
+#Song2:hover {
+    background-color: yellow;
+}
+
+body.twinkle {
+    background-image: url('space.jpg');
+    background-size: cover;
+}
+
+#game.twinkle {
+    box-shadow: 20px 3px 50px white;
+    background-color: grey;
+    border: 5px solid white;
+    opacity: 0.8;
+}
+
+.box.pressed.twinkle {
+    background-color: yellow;
+    box-shadow: 20px 3px 50px rgba(248, 255, 6, 0.5);
+}
+
+.line.damedane {
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.tiles.twinkle {
+    background-color: yellow;
+}
+
+/* SONG 3: FUR ELISE */
+
+#Song3:hover {
+    background-color: #a37e29;
+}
+
+body.elise {
+    background-image: url('piano.jpg');
+    background-size: cover;
+}
+
+#game.elise {
+    box-shadow: 20px 3px 50px black;
+    background-color: white;
+    border: 5px solid white;
+    opacity: 0.8;
+}
+
+.box.pressed.elise {
+    background-color: yellow;
+    box-shadow: 20px 3px 50px rgba(248, 255, 6, 0.5);
+}
+
+.line.elise {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.tiles.elise {
+    background-color: grey;
+}
+
+/* SONG 4: DOE */
+
+#Song4:hover{
+
+    background-color: rgb(169, 241, 97);
+
+}
+
+body.doe {
+    background-image: url('deer.jpg');
+    background-size: cover;
+}
+
+#game.doe {
+    box-shadow: 20px 3px 50px green;
+    background-color: white;
+    border: 5px solid  rgb(206, 226, 21);
+    opacity: 0.8;
+}
+
+.box.pressed.doe {
+    background-color: rgb(169, 241, 97);
+    box-shadow: 20px 3px 50px rgba(163, 228, 79, 0.5);
+}
+
+.line.doe {
+    background-color: rgb(255, 253, 125);
+    border: 1px solid rgb(255, 253, 125);
+}
+
+.tiles.doe {
+    background-color: green;
+}
+
+/* SONG 5: GLIMPSE OF US */
+
+#Song5:hover{
+    background-color: rgb(133, 212, 226);
+}
+
+body.glimpse {
+    background-image: url('glimpse.jpeg');
+    background-size: cover;
+background-position: center;
+ 
+}
+
+#game.glimpse {
+    box-shadow: 20px 3px 50px blue;
+    background-color: white;
+    border: 5px solid  rgb(72, 157, 197);
+    opacity: 0.9;
+}
+
+.box.pressed.glimpse {
+    background-color: lightblue;
+    box-shadow: 20px 3px 50px lightblue;
+}
+
+.line.glimpse {
+    background-color: rgb(33, 110, 161);
+    border: 1px solid rgb(32, 148, 138);
+}
+
+.tiles.glimpse {
+    background-color: lightblue;
+}
+
+/*SONG 6: FLY ME TO THE MOON */
+
+
+#Song6:hover{
+    background-color: rgb(133, 212, 226);
+}
+
+body.moon {
+    background-image: url('moon.PNG');
+    background-size:cover;
+    background-position: center;
+}
+
+#game.moon {
+    box-shadow: 20px 3px 50px blue;
+    background-color: white;
+    border: 5px solid  rgb(72, 157, 197);
+    opacity: 0.9;
+}
+
+.box.pressed.moon {
+    background-color: lightblue;
+    box-shadow: 20px 3px 50px lightblue;
+}
+
+.line.moon {
+    background-color: rgb(33, 110, 161);
+    border: 1px solid rgb(32, 148, 138);
+}
+
+.tiles.moon {
+    background-color: lightblue;
+}
+
+
+/* AFTER MENU */
+
+.aftergame{
+    display: none;
+    position: fixed;
+    width: 600px;
+    height: 500px;
+    left: 638px;
+    top: 250px;
+    text-align: center;
+    opacity: 0;
+    background-color: rgb(138, 138, 173);
+    border-radius: 5px;
+    font-family: cursive;
+    font-size: 25px;
+}
+    
+#points{
+    border: 1px solid black;
+    position: relative;
+    margin: 60px;
+    height: 40px;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: white;
+}
+    
+    
+#play{
+    border: 1px solid black;
+    position: relative;
+    margin: 60px;
+    height: 40px;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: white
+}
+    
+#combo{
+    border: 1px solid black;
+    position: relative;
+    margin: 60px;
+    height: 40px;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: white
+}
+
+#gotomenu{
+    border: 1px solid black;
+    position:relative;
+    margin:60px;
+    height: 40px;
+    padding-top: 15px;
+    border-radius: 5px;
+    background-color: white
+}
+
+#gotomenu:hover{
+    background-color: darksalmon;
+}
+
+#play:hover{
+    background-color: darksalmon;
+}
+
+#quit{
+    position:fixed;
+    right: 1%;
+    top: 10px;
+    padding: 3px;
+    margin: 4px;
+    border: 2px solid black;
+    background-color: white;
+    opacity: 0.5;
+    display: none;
+    text-align: center;
+}
+
+#restart{
+    position:fixed;
+    right: 1%;
+    top: 55px;
+    padding: 3px;
+    margin: 4px;
+    border: 2px solid black;
+    background-color: white;
+    display: none;
+    opacity: 0.5;
+    text-align: center;
+
+}
+
+#restart:hover{
+
+    background-color: yellow;
+    padding: 5px;
+    transition: padding 1s;
+    
+}
+
+#quit:hover{
+    background-color: yellow;
+    padding: 5px;
+    transition: padding 1s;
+}
+
+#calibratingscreen{
+    position:fixed;
+    display: none;
+    width: 50%;
+    height: 22%; 
+    background-color: white;
+    text-align: center;
+    left:25%;
+    top:25%;
+    padding-top: 10%;
+    align-items: center; 
+    border-radius: 5px;
+    font-size: 40px;
+    opacity: 0.8;
+}
+
+#calibrate{
+    text-align: center;
+    position: fixed;
+    right: 1%;
+    top: 100px;
+    padding: 3px;
+    margin: 4px;
+    border: 2px solid black;
+    background-color: white;
+    opacity: 0.5;
+    width: 128px;
+    display: none;
+
+}
+#calibrate:hover{
+
+    background-color: yellow;
+    padding: 5px;
+    transition: padding 1s;
+}
+
+#showpoints{
+    background-color: white;
+    display: none;
+    font-size: 40px;
+    margin: 8px;
+    padding: 4px;
+    border-radius: 2px;
+    font-family:cursive;
+}
+#showcombo{
+    background-color: white;
+    display:none;
+    margin: 3px;
+    padding: 4px;
+    font-size: 40px;
+    border-radius: 2px;
+    font-family: cursive;
+}
